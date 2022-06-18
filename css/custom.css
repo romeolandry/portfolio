@@ -4,14 +4,14 @@ body, h1,h2,h3,h4,h5,h6 {
 .w3-row-padding img {
     margin-bottom: 12px
 }
-/* Set the width of the sidebar to 120px */
+/* Set the width of the sidebar to 250px */
 .w3-sidebar {
-    width: 120px;
-    background: rgb(101, 224, 100);
+    width: 250px;
+    background: rgb(59, 71, 63);
 }
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
-    margin-left: 120px;
+    margin-left: 250px;
     background-color: rgb(101, 224, 233);
 }
 
