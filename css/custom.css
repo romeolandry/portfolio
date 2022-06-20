@@ -7,7 +7,7 @@ body, h1,h2,h3,h4,h5,h6 {
 /* Set the width of the sidebar to 250px */
 .w3-sidebar {
     width: 250px;
-    background: rgb(59, 71, 63);
+    background: rgb(97, 97, 97);
 }
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
