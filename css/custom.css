@@ -9,6 +9,11 @@ body, h1,h2,h3,h4,h5,h6 {
     width: 250px;
     background: rgb(97, 97, 97);
 }
+
+.sidebar_clicked{
+    background-color:rgb(101, 224, 233) !important;
+ }
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
     margin-left: 250px;

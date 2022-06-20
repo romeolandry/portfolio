@@ -34,7 +34,7 @@
   <!-- Avatar image in top left corner -->
   <img src="images/flora.png" style="width:100%">
   <h4><b>Astride Flora Goufack</b></h4>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-green">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-green sidebar_clicked">
     <i class="fa fa-home w3-xxlarge"><span class="w3-large"> Home</span></i>
    
   </a>
@@ -220,16 +220,17 @@
     </div><br>
     <p>Lassen Sie uns Kontakt aufnehmen. Senden Sie mir eine Nachricht:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form action="https://formspree.io/uuid"  method="POST" id="contact_form">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Betreff" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Nachricht" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" id="contact_form_btn">
           <i class="fa fa-paper-plane"></i> NACHRICHT SENDEN
         </button>
       </p>
+      <p id="contact_form_status"></p>
     </form>
   <!-- End Contact Section -->
   </div>
@@ -255,5 +256,6 @@
 </div>
 
 <script src="javascript/custom.js"></script>
+<script src="javascript/contact.js"></script>
 </body>
 </html>
