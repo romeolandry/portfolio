@@ -22,8 +22,13 @@ window.addEventListener("DOMContentLoaded", function() {
   
     form.addEventListener("submit", function(ev) {
       ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
+      //var data = new FormData(form);
+      //ajax(form.method, form.action, data, success, error);
+      var name = document.querySelector('#name').value;
+      var emailFrom = document.querySelector('#email').value;
+      var subject = document.querySelector('#subject').value;
+      var message = document.querySelector('#message').value;
+      sendEmail(emailFrom, subject, name.concat(":").concat(message))
     });
   });
     
@@ -42,4 +47,20 @@ window.addEventListener("DOMContentLoaded", function() {
       }
     };
     xhr.send(data);
+  }
+
+  // Intgration of Email elastic
+
+  function sendEmail(from, subject, body){
+    Email.send({
+      Host : "smtp25.elasticemail.com",
+      Username : "romeokamgo@gmail.com",
+      Password : "C45104FB2A81D7C192737B55CBAC1CBDADCB",
+      To : 'astride11_goufack@yahoo.com',
+      From : from,
+      Subject : subject,
+      Body : body
+  }).then(
+    message => alert(message)
+  );
   }

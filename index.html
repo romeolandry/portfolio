@@ -221,10 +221,10 @@
     <p>Lassen Sie uns Kontakt aufnehmen. Senden Sie mir eine Nachricht:</p>
 
     <form action="https://formspree.io/uuid"  method="POST" id="contact_form">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Betreff" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nachricht" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"id="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Betreff" required name="Subject" id="subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nachricht" required name="Message" id="message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit" id="contact_form_btn">
           <i class="fa fa-paper-plane"></i> NACHRICHT SENDEN
@@ -257,5 +257,7 @@
 
 <script src="javascript/custom.js"></script>
 <script src="javascript/contact.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="javascript/elasticMail.js"></script>
 </body>
 </html>
